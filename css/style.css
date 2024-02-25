@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    transition: all 0.3s;
+    font-family:Arial, Helvetica, sans-serif;
+    color: white
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background: url(../images/bomba.jpg) no-repeat center center/ cover;
+}
+.tablero{
+    border-radius: 30px;
+    background-color: #333;
+    padding: 15px;
+    box-shadow: 10px 10px 10px #000000
+}
+.tiempo{
+    font-size: 2rem;
+}
+.botones{
+    display: flex;
+    justify-content: space-around;
+    cursor: pointer;
+    
+}
+.btn{
+    display: inline-block;
+    font-size: 100%;
+    padding: 20px;
+    
+}
+.fa-solid{
+    background-color: green;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 0px #000000
+}
+.botones .btn.active,
+.botones .btn.stopActive {
+    pointer-events: none;
+    opacity: .7;
+}
